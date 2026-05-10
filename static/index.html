@@ -26,7 +26,12 @@
         <span class="brand-mark">OS</span>
         <span>Om Singh Bisen</span>
       </a>
-      <nav aria-label="Primary navigation">
+      <button class="mobile-toggle" id="mobileToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primaryNav" aria-label="Primary navigation">
         <a href="#work">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#about">About</a>
@@ -83,6 +88,10 @@ answer = ground(llm, context)</code></pre>
           AI/ML engineer focused on RAG systems, LLM applications, FastAPI backends,
           vector search, and production-minded interfaces.
         </p>
+        <div class="hero-actions">
+          <a class="hero-cta primary" href="#assistant">Ask my AI twin</a>
+          <a class="hero-cta" href="#work">View projects</a>
+        </div>
       </section>
 
       <div class="marquee" aria-hidden="true">
@@ -91,6 +100,24 @@ answer = ground(llm, context)</code></pre>
           <span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FastAPI</span><span>React</span><span>FAISS</span><span>Docker</span><span>Supabase</span>
         </div>
       </div>
+
+      <section class="assistant-teaser reveal" aria-label="Quick AI twin prompts">
+        <div>
+          <p class="section-kicker">Ask early</p>
+          <h2>Query the portfolio like a recruiter.</h2>
+        </div>
+        <div class="prompt-grid">
+          <button type="button" data-question="Which project best shows Om's AI engineering skills?">
+            Best AI project
+          </button>
+          <button type="button" data-question="Summarize Om's skills for an AI/ML engineer role.">
+            AI/ML fit
+          </button>
+          <button type="button" data-question="How should Om introduce himself in an interview?">
+            Interview intro
+          </button>
+        </div>
+      </section>
 
       <section id="work" class="section reveal">
         <div class="section-head">

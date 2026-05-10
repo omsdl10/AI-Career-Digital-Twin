@@ -131,6 +131,33 @@ Open `http://127.0.0.1:8501` in your browser.
 
 ---
 
+## Deployment Notes
+
+The app is a FastAPI project that serves both the portfolio frontend and chatbot API.
+
+Recommended production command:
+
+```bash
+cd src
+uvicorn app:app --host 0.0.0.0 --port $PORT
+```
+
+Required environment variable:
+
+```bash
+OPENAI_API_KEY=your_api_key_here
+```
+
+Optional environment variable:
+
+```bash
+OPENAI_MODEL=gpt-4o-mini
+```
+
+For platforms such as Render or Railway, set the build command to install `requirements.txt`, set the start command above, and add the environment variables in the platform dashboard.
+
+---
+
 ## 💡 Example Queries
 
 * “What skills should I learn for AI roles?”

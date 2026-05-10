@@ -3,6 +3,9 @@ const neuralCanvas = document.querySelector("#neuralCanvas");
 const chatForm = document.querySelector("#chatForm");
 const chatInput = document.querySelector("#chatInput");
 const chatMessages = document.querySelector("#chatMessages");
+const mobileToggle = document.querySelector("#mobileToggle");
+const primaryNav = document.querySelector("#primaryNav");
+const promptButtons = document.querySelectorAll("[data-question]");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function startNeuralCanvas() {
@@ -89,6 +92,19 @@ window.addEventListener("pointermove", (event) => {
 
 startNeuralCanvas();
 
+mobileToggle?.addEventListener("click", () => {
+  const isOpen = mobileToggle.getAttribute("aria-expanded") === "true";
+  mobileToggle.setAttribute("aria-expanded", String(!isOpen));
+  primaryNav?.classList.toggle("open", !isOpen);
+});
+
+primaryNav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileToggle?.setAttribute("aria-expanded", "false");
+    primaryNav?.classList.remove("open");
+  });
+});
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -129,6 +145,17 @@ function typeMessage(element, text) {
   };
   step();
 }
+
+promptButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const question = button.dataset.question;
+    if (!question || !chatInput) return;
+
+    document.querySelector("#assistant")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    chatInput.value = question;
+    window.setTimeout(() => chatInput.focus(), 420);
+  });
+});
 
 chatForm.addEventListener("submit", async (event) => {
   event.preventDefault();
