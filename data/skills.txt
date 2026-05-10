@@ -1,7 +1,10 @@
 Technical Skills
 
-Programming: Python, C/C++
-AI / ML: RAG, LangChain, Scikit-learn, Pandas, NumPy, Matplotlib, NLP
-Web Development: Django, React, REST APIs
-Databases & Cloud: SQL, Supabase, Git, GitHub, Linux
-Core CS: Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, Computer Architecture
+Programming: Python, C
+Web and Backend Development: Django, Streamlit, REST APIs
+Frontend Development: React.js
+AI/ML: Supervised Learning, Unsupervised Learning, Model Evaluation, Feature Engineering, NLP, Tokenization, Embeddings, Transformers, scikit-learn
+LLM and Agentic AI: LangChain, LangGraph, RAG, LLMs, Vector Search
+Databases and Storage: SQL, PostgreSQL, SQLAlchemy, FAISS, ChromaDB, Supabase, Redis
+Tools and Platforms: Git, GitHub, Docker, Railway, Wireshark, Linux
+Core CS: Data Structures and Algorithms, Operating Systems, Computer Networks

@@ -1,33 +1,41 @@
 Projects
 
-AI Career Digital Twin
-Tech Stack: LangChain, RAG, LLMs, Python
+Fake News Detection System (Full-Stack AI Application)
+Year: 2025
+Tools Used: React.js, FastAPI, Python, PostgreSQL, SQLAlchemy, Redis, Docker, FAISS, Hugging Face RoBERTa, REST APIs
+Live: fakenews-detector-production-6bc4.up.railway.app
+- Built a full-stack fake news detection platform allowing users to submit article text or URLs and receive real-time credibility predictions with confidence scores and explanations.
+- Designed a FastAPI backend with structured request and response models, integrating NLP-based classification using transformer models such as RoBERTa and lightweight fallback logic for resource-constrained deployment.
+- Implemented semantic search using FAISS and embeddings to retrieve similar articles, improving contextual understanding and prediction reliability.
+- Developed a React-based frontend with API integration, handling user inputs, loading states, and dynamic result visualization.
+- Engineered scalable backend systems using PostgreSQL and SQLAlchemy to store articles, predictions, and user data, with Redis caching to optimize repeated queries.
+- Containerized and deployed the application on Railway using Docker, resolving memory constraints by introducing a lightweight inference mode.
 
-2025
+Career Digital Twin: Personal AI Assistant
+Year: 2025
+Tools Used: Python, LangChain, LLMs, RAG
+- Developed a personalized AI assistant using LangChain and Retrieval-Augmented Generation pipelines to answer recruiter and career-related queries from verified data sources.
+- Implemented intent classification, document retrieval, and response grounding to improve factual accuracy and user trust in AI-generated responses.
+- Integrated guardrails, output validation, and structured response formatting to make the system suitable for enterprise-ready AI deployments.
 
-• Built a personalized AI assistant using LangChain and RAG pipelines; reduced hallucination rate via grounded responses from structured knowledge sources across 100+ document chunks.
-• Engineered intent classification and multi-stage document retrieval enabling context-aware responses across 3+ query
-categories (career planning, skill matching, project lookup).
-• Integrated AI guardrails, structured output validation, and confidence scoring for enterprise-ready, production-grade
-deployment.
+AI Health Agent: AI Blood Report Analysis Platform
+Year: 2025
+Tools Used: Python, LangChain, Streamlit, Supabase
+- Designed a full-stack AI system to analyze and summarize medical blood reports using a multi-modal LLM architecture, delivering accurate and human-readable health insights.
+- Developed a secure backend in Python supporting large PDF ingestion over 20MB, high-accuracy text extraction, Supabase authentication, and reliable data handling.
+- Built an interactive Streamlit-based user interface enabling users to upload reports and receive AI-generated summaries in real time with minimal setup.
+- Applied prompt engineering, validation layers, and error handling mechanisms to reduce hallucinations and ensure consistent, trustworthy outputs.
+
 Stock Prediction Portal
-Tech Stack: Django, React, Machine Learning, REST APIs
+Year: 2025
+Tools Used: Django, React, Machine Learning, REST APIs
+- Built a full-stack stock forecasting app with Django REST APIs and React frontend supporting over 50 stock symbols with 5 years of historical data analysis.
+- Implemented machine learning models using 15+ technical indicators such as RSI, MACD, and Bollinger Bands with feature engineering.
+- Designed JWT-authenticated APIs and interactive dashboards with dynamic charts for stock visualization and financial decision-making.
 
-2025
-
-• Built a full-stack stock forecasting app with Django REST APIs and React frontend supporting 50+ stock symbols
-with 5 years of historical data analysis.
-• Implemented ML models using 15+ technical indicators (RSI, MACD, Bollinger Bands) with feature engineering,
-achieving consistent directional accuracy.
-• Designed JWT-authenticated APIs and interactive dashboards with dynamic charts for real-time stock visualization
-and financial decision-making.
 Raspberry Pi System Monitoring Dashboard
-Tech Stack: Python, Django, Linux, psutil
-
-2024
-
-• Developed a real-time Linux system monitoring dashboard on Raspberry Pi tracking 6 metrics (CPU, memory, disk,
-uptime, temperature, network I/O) with sub-second refresh.
-• Extracted system metrics from Linux /proc and /sys virtual file systems using Python and psutil, eliminating thirdparty agent dependencies.
-• Built web-based remote monitoring interface via Django MVT with alert thresholds for CPU spikes exceeding 85%
-utilization.
+Year: 2025
+Tools Used: Python, Django, Linux, psutil
+- Built a real-time Linux system monitoring dashboard deployed on Raspberry Pi, tracking CPU, memory, disk usage, uptime, temperature, and network I/O.
+- Extracted low-level system metrics using Python and psutil by interfacing with /proc and /sys filesystems, reducing reliance on third-party tools.
+- Implemented threshold-based alerting for CPU usage above 85% through a Django backend for proactive anomaly detection in resource-constrained environments.

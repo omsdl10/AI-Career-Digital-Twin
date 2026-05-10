@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Om Singh Bisen | AI Portfolio</title>
+    <meta
+      name="description"
+      content="Animated AI portfolio for Om Singh Bisen with a personal RAG career chatbot."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">OS</span>
+        <span>Om Singh Bisen</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#connect">Connect</a>
+        <a class="nav-cta" href="#assistant">Ask AI Twin</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <div class="eyebrow-row">
+          <span class="chip acid">AI Engineer</span>
+          <span class="chip">RAG Systems</span>
+          <span class="chip">Full-Stack AI</span>
+          <span class="chip">M.Tech CSE</span>
+        </div>
+
+        <div class="hero-grid">
+          <div>
+            <h1 class="hero-title">
+              <span>Career</span>
+              <span class="outline">Digital</span>
+              <span>Twin</span>
+            </h1>
+          </div>
+          <aside class="hero-panel">
+            <div class="lab-card">
+              <div class="lab-topline">
+                <span>RAG Runtime</span>
+                <span class="pulse-label">online</span>
+              </div>
+              <div class="pipeline">
+                <div class="pipeline-node active">Resume</div>
+                <div class="pipeline-line"></div>
+                <div class="pipeline-node">Retriever</div>
+                <div class="pipeline-line"></div>
+                <div class="pipeline-node">LLM</div>
+                <div class="pipeline-line"></div>
+                <div class="pipeline-node">Answer</div>
+              </div>
+              <pre class="code-card"><code>query = "Why hire Om?"
+context = retrieve(profile, k=5)
+answer = ground(llm, context)</code></pre>
+            </div>
+            <div class="metric-grid">
+              <div class="metric"><strong>98.6%</strong><span>GATE CS & IT percentile</span></div>
+              <div class="metric"><strong>400+</strong><span>DSA problems solved</span></div>
+              <div class="metric"><strong>5</strong><span>Applied engineering projects</span></div>
+              <div class="metric"><strong>2027</strong><span>M.Tech CSE expected</span></div>
+            </div>
+          </aside>
+        </div>
+        <p class="hero-summary">
+          AI/ML engineer focused on RAG systems, LLM applications, FastAPI backends,
+          vector search, and production-minded interfaces.
+        </p>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FastAPI</span><span>React</span><span>FAISS</span><span>Docker</span><span>Supabase</span>
+          <span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FastAPI</span><span>React</span><span>FAISS</span><span>Docker</span><span>Supabase</span>
+        </div>
+      </div>
+
+      <section id="work" class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Featured Work</p>
+            <h2>Projects built around AI, retrieval, and real systems.</h2>
+          </div>
+          <p>
+            A focused mix of AI applications, backend systems, deployment work, and
+            user-facing interfaces.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-row">
+            <div class="project-year">2025</div>
+            <div>
+              <h3>Fake News Detection System</h3>
+              <div class="project-meta">
+                <span>RoBERTa classifier</span>
+                <span>FAISS retrieval</span>
+                <span>Docker deploy</span>
+              </div>
+              <p>
+                Full-stack AI platform for real-time credibility prediction using RoBERTa,
+                semantic search, confidence scoring, and deployment-aware fallback logic.
+              </p>
+              <a class="project-link" href="https://fakenews-detector-production-6bc4.up.railway.app" target="_blank" rel="noreferrer">
+                View live project
+              </a>
+            </div>
+            <div class="project-stack">
+              <span>React</span><span>FastAPI</span><span>FAISS</span><span>Docker</span><span>PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-year">2025</div>
+            <div>
+              <h3>Career Digital Twin</h3>
+              <div class="project-meta">
+                <span>Personal RAG</span>
+                <span>Grounded answers</span>
+                <span>FastAPI chatbot</span>
+              </div>
+              <p>
+                Personal RAG assistant that answers recruiter and career queries from verified
+                resume, skills, project, and achievement data.
+              </p>
+            </div>
+            <div class="project-stack">
+              <span>Python</span><span>LangChain</span><span>RAG</span><span>LLMs</span>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-year">2025</div>
+            <div>
+              <h3>AI Health Agent</h3>
+              <div class="project-meta">
+                <span>PDF ingestion</span>
+                <span>Prompt validation</span>
+                <span>Supabase auth</span>
+              </div>
+              <p>
+                Blood report analysis platform with PDF ingestion, Streamlit UI, Supabase
+                authentication, prompt validation, and hallucination reduction layers.
+              </p>
+            </div>
+            <div class="project-stack">
+              <span>Streamlit</span><span>LangChain</span><span>Supabase</span><span>PDF AI</span>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-year">2025</div>
+            <div>
+              <h3>Stock Prediction Portal</h3>
+              <div class="project-meta">
+                <span>Feature engineering</span>
+                <span>REST APIs</span>
+                <span>React charts</span>
+              </div>
+              <p>
+                Forecasting dashboard with Django REST APIs, React charts, feature engineering,
+                and technical indicators for historical stock analysis.
+              </p>
+            </div>
+            <div class="project-stack">
+              <span>Django</span><span>React</span><span>ML</span><span>REST APIs</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Capabilities</p>
+            <h2>AI depth with product instincts.</h2>
+          </div>
+          <p>
+            Built for roles that need practical AI engineering, backend clarity,
+            and strong fundamentals.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <article>
+            <div class="skill-index">01</div>
+            <h3>AI and RAG</h3>
+            <p>LangChain, LangGraph, RAG, LLMs, vector search, embeddings, transformers, NLP, model evaluation, prompt validation.</p>
+          </article>
+          <article>
+            <div class="skill-index">02</div>
+            <h3>Backend and Data</h3>
+            <p>Python, FastAPI, Django, REST APIs, SQL, PostgreSQL, SQLAlchemy, Redis, Supabase, FAISS, ChromaDB.</p>
+          </article>
+          <article>
+            <div class="skill-index">03</div>
+            <h3>Frontend and Systems</h3>
+            <p>React.js, Streamlit, Docker, Railway, Git, GitHub, Linux, Wireshark, operating systems, networks, DSA.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="about-band">
+          <div class="statement">Building AI tools that are grounded, usable, and deployable.</div>
+          <div class="achievement-stack">
+            <article><strong>M.Tech CSE</strong><span>Motilal Nehru National Institute of Technology, Allahabad. Expected 2027.</span></article>
+            <article><strong>GATE 2025</strong><span>98.6 percentile in CS & IT among 176K+ candidates.</span></article>
+            <article><strong>Competitive Foundation</strong><span>400+ DSA problems solved and state-level basketball experience.</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="assistant" class="section reveal">
+        <div class="chat-shell">
+          <div class="chat-heading">
+            <div>
+              <p class="section-kicker">Personal RAG</p>
+              <h2>Ask my AI twin</h2>
+            </div>
+            <span class="status-dot">RAG active</span>
+          </div>
+
+          <div id="chatMessages" class="chat-messages" aria-live="polite">
+            <div class="message bot">
+              Ask about my projects, skills, education, resume fit, or interview profile.
+            </div>
+          </div>
+
+          <form id="chatForm" class="chat-form">
+            <input
+              id="chatInput"
+              type="text"
+              autocomplete="off"
+              placeholder="Ask about Om's AI projects..."
+              aria-label="Ask the AI twin"
+            />
+            <button type="submit">Ask</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="connect" class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Connect</p>
+            <h2>Profiles, contact, and live work.</h2>
+          </div>
+          <p>
+            Reach out for AI engineering, full-stack AI projects, internships,
+            collaborations, or recruiter conversations.
+          </p>
+        </div>
+
+        <div class="connect-grid">
+          <a class="connect-card primary" href="mailto:om.sdl10@gmail.com">
+            <span>Email</span>
+            <strong>om.sdl10@gmail.com</strong>
+          </a>
+          <a class="connect-card" href="tel:+917489691088">
+            <span>Phone</span>
+            <strong>+91 74896 91088</strong>
+          </a>
+          <a class="connect-card" href="https://www.linkedin.com/in/om-singh-bisen/" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            <strong>om-singh-bisen</strong>
+          </a>
+          <a class="connect-card" href="https://github.com/omsdl10" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <strong>omsdl10</strong>
+          </a>
+          <a class="connect-card" href="https://leetcode.com/omsdl10/" target="_blank" rel="noreferrer">
+            <span>LeetCode</span>
+            <strong>omsdl10</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>

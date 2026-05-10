@@ -1,14 +1,11 @@
-
----
-
-# 📦 2. `requirements.txt`
-
-```txt
 langchain
+langchain-community
+langchain-openai
+langchain-text-splitters
 openai
-chromadb
 tiktoken
 pydantic
 scikit-learn
-streamlit
 python-dotenv
+fastapi
+uvicorn

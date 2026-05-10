@@ -1,42 +1,38 @@
-# 🤖 AI Career Digital Twin 2025
+# AI Career Digital Twin 2025
 
-An intelligent, personalized AI career assistant built using **LangChain, Retrieval-Augmented Generation (RAG), and Large Language Models (LLMs)** to deliver grounded, context-aware career guidance.
+An animated AI/ML portfolio website with an embedded personal RAG chatbot. The assistant answers questions using verified details from Om Singh Bisen's resume, skills, projects, education, and achievements.
 
 ---
 
 ## 🚀 Overview
 
-AI Career Digital Twin simulates a **personal career mentor** by leveraging your own data (resume, skills, projects) and combining it with modern AI techniques like **RAG pipelines and intent classification**.
+AI Career Digital Twin simulates a **personal career mentor** by leveraging structured personal data and combining it with modern AI techniques like **retrieval-augmented generation, local document retrieval, and grounded response generation**.
 
-Unlike generic chatbots, this system provides **fact-based, explainable responses** with reduced hallucination.
+Unlike generic chatbots, this system provides **profile-aware responses** grounded in project and resume context. The website also acts as a polished portfolio for AI/ML engineering roles.
 
 ---
 
 ## ✨ Key Features
 
-* 🔍 **RAG Pipeline**
+* **RAG Pipeline**
   Retrieves relevant information from structured documents to ensure grounded responses
 
-* 🧠 **Intent Classification**
-  Supports multiple query types:
+* **Animated Portfolio Website**
+  Custom FastAPI-served HTML/CSS/JS portfolio inspired by bold editorial design
 
-  * Career Planning
-  * Skill Matching
-  * Project Recommendations
+* **Personal Chatbot**
+  Answers questions about skills, projects, education, resume fit, and interview profile
 
-* 📄 **Semantic Search (Vector DB)**
-  Uses embeddings + similarity search for accurate document retrieval
+* **Local Retrieval**
+  Uses TF-IDF similarity search over personal text data for retrieval
 
-* 🛡️ **AI Guardrails**
+* **AI Guardrails**
 
   * Structured output validation (Pydantic)
   * Confidence scoring system
 
-* 💬 **ChatGPT-like UI (Streamlit)**
-  Interactive chat interface with session-based memory
-
-* 📊 **Explainability**
-  Displays retrieved source documents for transparency
+* **FastAPI Backend**
+  Provides the website and `/api/chat` endpoint
 
 ---
 
@@ -46,9 +42,10 @@ Unlike generic chatbots, this system provides **fact-based, explainable response
 | ------------- | -------------------- |
 | Language      | Python               |
 | LLM Framework | LangChain            |
-| Vector DB     | ChromaDB             |
-| Embeddings    | OpenAI / HuggingFace |
-| UI            | Streamlit            |
+| Retrieval     | scikit-learn TF-IDF  |
+| LLM Provider  | OpenAI               |
+| Backend       | FastAPI / Uvicorn    |
+| Frontend      | HTML, CSS, JavaScript |
 | Validation    | Pydantic             |
 
 ---
@@ -64,13 +61,18 @@ ai-career-digital-twin/
 │   ├── projects.txt
 │
 ├── src/
-│   ├── app.py              # Streamlit UI
+│   ├── app.py              # FastAPI backend and API routes
 │   ├── ingestion.py       # Data loading & chunking
-│   ├── retriever.py       # Vector retrieval
+│   ├── retriever.py       # Local document retrieval
 │   ├── classifier.py      # Intent classification
 │   ├── rag_pipeline.py    # RAG logic
 │   ├── guardrails.py      # Validation & scoring
 │   ├── main.py            # CLI interface
+│
+├── static/
+│   ├── index.html         # Animated portfolio page
+│   ├── styles.css         # Visual design and animations
+│   ├── script.js          # Chat UI and neural canvas animation
 │
 ├── requirements.txt
 ├── .gitignore
@@ -84,8 +86,8 @@ ai-career-digital-twin/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ai-career-digital-twin.git
-cd ai-career-digital-twin
+git clone https://github.com/omsdl10/AI-Career-Digital-Twin.git
+cd AI-Career-Digital-Twin
 ```
 
 ---
@@ -121,8 +123,11 @@ OPENAI_API_KEY=your_api_key_here
 ### 5. Run the Application
 
 ```bash
-streamlit run src/app.py
+cd src
+uvicorn app:app --host 127.0.0.1 --port 8501
 ```
+
+Open `http://127.0.0.1:8501` in your browser.
 
 ---
 
@@ -139,9 +144,9 @@ streamlit run src/app.py
 ```
 User Query
    ↓
-Intent Classifier
+FastAPI /api/chat
    ↓
-Retriever (Vector Database)
+Local Retriever
    ↓
 RAG Pipeline (LangChain)
    ↓
@@ -177,4 +182,3 @@ Contributions are welcome!
 Feel free to open issues or submit pull requests.
 
 ---
-
