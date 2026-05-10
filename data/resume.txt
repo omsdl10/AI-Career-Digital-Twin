@@ -34,7 +34,7 @@ Core CS: Data Structures and Algorithms, Operating Systems, Computer Networks
 Projects
 
 Fake News Detection System (Full-Stack AI Application)
-Year: 2025
+Year: 2026
 Tools Used: React.js, FastAPI, Python, PostgreSQL, SQLAlchemy, Redis, Docker, FAISS, Hugging Face RoBERTa, REST APIs
 Live: fakenews-detector-production-6bc4.up.railway.app
 - Built a full-stack fake news detection platform allowing users to submit article text or URLs and receive real-time credibility predictions with confidence scores and explanations.
@@ -58,13 +58,6 @@ Tools Used: Python, LangChain, Streamlit, Supabase
 - Developed a secure backend in Python supporting large PDF ingestion over 20MB, high-accuracy text extraction, Supabase authentication, and reliable data handling.
 - Built an interactive Streamlit-based user interface enabling users to upload reports and receive AI-generated summaries in real time with minimal setup.
 - Applied prompt engineering, validation layers, and error handling mechanisms to reduce hallucinations and ensure consistent, trustworthy outputs.
-
-Stock Prediction Portal
-Year: 2025
-Tools Used: Django, React, Machine Learning, REST APIs
-- Built a full-stack stock forecasting app with Django REST APIs and React frontend supporting over 50 stock symbols with 5 years of historical data analysis.
-- Implemented machine learning models using 15+ technical indicators such as RSI, MACD, and Bollinger Bands with feature engineering.
-- Designed JWT-authenticated APIs and interactive dashboards with dynamic charts for stock visualization and financial decision-making.
 
 Raspberry Pi System Monitoring Dashboard
 Year: 2025
