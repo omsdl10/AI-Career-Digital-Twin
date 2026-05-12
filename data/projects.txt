@@ -3,7 +3,7 @@ Projects
 Fake News Detection System (Full-Stack AI Application)
 Year: 2026
 Tools Used: React.js, FastAPI, Python, PostgreSQL, SQLAlchemy, Redis, Docker, FAISS, Hugging Face RoBERTa, REST APIs
-Live: fakenews-detector-production-6bc4.up.railway.app
+Live: https://fakenews-detector-ebtv.onrender.com
 - Built a full-stack fake news detection platform allowing users to submit article text or URLs and receive real-time credibility predictions with confidence scores and explanations.
 - Designed a FastAPI backend with structured request and response models, integrating NLP-based classification using transformer models such as RoBERTa and lightweight fallback logic for resource-constrained deployment.
 - Implemented semantic search using FAISS and embeddings to retrieve similar articles, improving contextual understanding and prediction reliability.
